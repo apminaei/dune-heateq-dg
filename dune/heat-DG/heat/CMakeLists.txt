@@ -1,0 +1,11 @@
+#install headers
+install(FILES boundary_conditions.hh DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/dune/heat-DG/heat)
+install(FILES characteristic_values.hh DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/dune/heat-DG/heat)
+install(FILES initial_conditions.hh DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/dune/heat-DG/heat)
+install(FILES driver.hh DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/dune/heat-DG/heat)
+install(FILES include_problem.hh DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/dune/heat-DG/heat)
+install(FILES parameters.hh DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/dune/heat-DG/heat)
+add_subdirectory("grids")
+add_subdirectory("inputs")
+add_subdirectory("outputs")
+add_subdirectory("properties")
